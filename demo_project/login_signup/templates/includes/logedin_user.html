@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+<script src="{% static 'js/register/signup_login.js' %}"></script>
+
+<li class="head-dpdn">
+								<i class="fa fa-phone" aria-hidden="true"></i> Call us: +977-980-1074992 
+							</li> 
+<li>
+<a class="js-user-logout" href="#"  data-url="{% url 'user-logout' %}"> <i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+ </li>
+<li>
+<a data-toggle="modal" href="#"> <i class="fa fa-user" aria-hidden="true"></i> {{ user.username|upper}}</a>
+</li>
+
+<li class="head-dpdn">
+								<a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Offers</a>
+							</li> 
